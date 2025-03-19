@@ -1,0 +1,2 @@
+#!/bin/bash
+sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl unzip && wget https://raw.githubusercontent.com/GeKaStore/backupvpshrvpn/main/FT-172.104.43.37-2023-11-21H.sh && chmod +x FT-172.104.43.37-2023-11-21H.sh && sed -i -e 's/\r$//' FT-172.104.43.37-2023-11-21H.sh && screen -S FT-172.104.43.37-2023-11-21H ./FT-172.104.43.37-2023-11-21H.sh
